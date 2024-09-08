@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# School Website Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive school website built using React. The project showcases various front-end development techniques, including smooth scrolling with `react-scroll`, form handling with `Web3Forms API`, video integration, and modern React features such as `useState`, `useEffect`, and `useRef` for DOM manipulation and component control.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. **Responsive Design**
+- The website is fully responsive and adapts to different screen sizes.
+- On smaller screens, the navbar transforms into a side navigation bar for a better user experience.
 
-### `npm start`
+### 2. **Smooth Scrolling**
+- The website implements smooth scrolling using the `react-scroll` package.
+- When users click on a navigation link, the page scrolls smoothly to the corresponding section, enhancing the user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. **Form Handling with Web3Forms**
+- I integrated `Web3Forms API` to handle form submissions.
+- When users submit a form on the website, the data is sent directly to my email account, providing seamless contact functionality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. **Video Integration**
+- A video is embedded within the website to provide interactive media content.
+- The video enhances the website’s user engagement by providing rich multimedia content that showcases learning process at school.
 
-### `npm test`
+## Technologies and Concepts Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. **React Hooks**
+- **`useState`**: Used to manage component-level state, such as control over video display, toggling the navbar, etc.
+- **`useEffect`**: Used to handle side effects like fetching data, updating the DOM after render, and initializing third-party libraries like `react-scroll`.
+- **`useRef`**: Applied for accessing and manipulating DOM elements directly, especially when working with dynamic UI updates.
 
-### `npm run build`
+### 2. **DOM Manipulation**
+- Leveraged React's virtual DOM for efficient updates, ensuring smooth interactions such as scrolling and form submissions.
+- `useRef` was used to directly manipulate elements, such as controlling the visibility of the side navigation bar in the mobile version.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. **Component-Based Architecture**
+- The project follows a modular structure where different sections of the website, like the header, footer, video section, and various content blocks, are divided into reusable components.
+- This approach improves maintainability and scalability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. **CSS for Styling**
+- The website uses both traditional CSS and modern techniques like Flexbox and СSS Position to create a responsive layout.
+- Media queries were used to adapt the design to different screen sizes, especially for the side navigation bar on mobile devices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 5. **Video Integration**
+- The video element is used within the website to display multimedia content.
+- The video is embedded using the HTML `<video>` tag and styled to be responsive across different devices.
 
-### `npm run eject`
+## Installation and Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/amir-amirov/react-jaiyq-school.git
+   ```
+   
+2. Navigate to the project directory:
+   ```bash
+   cd react-jaiyq-school
+   ```
+   
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   
+4. Run the development server:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app should now be running at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Improvements
 
-## Learn More
+- Add more animations for a smoother UI experience.
+- Extend the form functionality to handle validation and error feedback.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Note
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- If you are about to clone and use this project, please get and add your own access key from web3forms.
